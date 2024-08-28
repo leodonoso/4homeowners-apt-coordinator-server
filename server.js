@@ -25,7 +25,7 @@ const db = getFirestore(fb)
 const app = express()
 
 app.use(cors(
-    {origin: "http://localhost:3000"}
+    {origin: "https://4homeowners.netlify.app"}
 ))
 
 // Get roofers list from Firebase
