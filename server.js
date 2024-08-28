@@ -24,7 +24,9 @@ const db = getFirestore(fb)
 
 const app = express()
 
-app.use(cors())
+app.use(cors(
+    {origin: "http://localhost:3000"}
+))
 
 // Get roofers list from Firebase
 app.get("/roofers", (req, res) => {
